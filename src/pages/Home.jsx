@@ -50,24 +50,25 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Content - Round Photo */}
+          {/* Right Content - Photo */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative group">
               {/* Animated gradient ring around photo */}
               <div className="absolute -inset-3 bg-gradient-to-r from-purple-500 via-pink-500 to-green-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-500 group-hover:duration-200" />
               
               {/* Main photo container */}
-              <div className="relative bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full p-2 backdrop-blur-sm">
-                <div className="relative rounded-full overflow-hidden">
+              <div className="relative bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-2 backdrop-blur-sm">
+                <div className="relative rounded-xl overflow-hidden">
+                  {/* Replace this path with your actual photo path */}
                   <img 
-                    src="/profile.jpg"  {/* ← CHANGE THIS TO YOUR PHOTO PATH */}
+                    src="/profile.jpg"  /* ← CHANGE THIS TO YOUR PHOTO PATH */
                     alt="Tharusha Iduwara"
-                    className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full"
+                    className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-xl"
                     style={{ objectFit: 'cover' }}
                   />
                   
                   {/* Overlay gradient for depth */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 via-transparent to-transparent rounded-full" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 via-transparent to-transparent" />
                 </div>
                 
                 {/* Decorative elements */}
