@@ -82,30 +82,6 @@ const Resume = () => {
                 ))}
               </div>
             </div>
-
-            {/* CV Download Section - Left Column */}
-            <div className="mt-8 bg-gradient-to-r from-purple-500/15 to-pink-500/15 border border-purple-400/30 rounded-xl p-6 text-center">
-              <FileText className="w-10 h-10 text-purple-400 mx-auto mb-3" />
-              <h3 className="text-lg font-semibold text-white mb-2">Download My Resume</h3>
-              <p className="text-xs text-gray-400 mb-4">Complete CV with detailed experience, skills, and education</p>
-              <button
-                onClick={handleDownloadCV}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all group"
-              >
-                {downloaded ? (
-                  <>
-                    <CheckCircle className="w-4 h-4" />
-                    Downloaded!
-                  </>
-                ) : (
-                  <>
-                    <Download className="w-4 h-4" />
-                    Download CV (PDF)
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </>
-                )}
-              </button>
-            </div>
           </div>
 
           {/* Right Column - Experience */}
