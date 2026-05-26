@@ -6,8 +6,8 @@ const DownloadCV = ({ variant = 'default' }) => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Tharusha_Iduwara_CV.pdf';
-    link.download = 'Tharusha_Iduwara_CV.pdf';
+    link.href = '/K.D.T Iduwara.pdf';
+    link.download = 'K.D.T Iduwara.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
