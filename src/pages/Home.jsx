@@ -4,10 +4,6 @@ const Home = () => {
       {/* Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(167,139,250,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(167,139,250,0.04)_1px,transparent_1px)] bg-[size:48px_48px] pointer-events-none" />
       
-      {/* Gradient Blobs */}
-      <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] rounded-full bg-gradient-to-r from-purple-500/10 to-transparent pointer-events-none" />
-      <div className="absolute bottom-[15%] left-[5%] w-[300px] h-[300px] rounded-full bg-gradient-to-r from-green-500/8 to-transparent pointer-events-none" />
-
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Text */}
