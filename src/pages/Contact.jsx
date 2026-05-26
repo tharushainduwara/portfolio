@@ -48,20 +48,6 @@ const Contact = () => {
             <a href="https://linkedin.com/in/tharusha-iduwara" target="_blank" className="text-gray-500 hover:text-purple-400 transition text-sm font-['Space_Mono']">LinkedIn ↗</a>
             <span className="text-gray-500 text-sm font-['Space_Mono']">Wadduwa, Sri Lanka</span>
           </div>
-
-          {/* References */}
-          <div className="grid md:grid-cols-2 gap-6 text-left">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <div className="font-medium text-white text-sm mb-1">Dr. M.B.M. Irshad, PhD ICT</div>
-              <div className="text-xs text-gray-500 mb-1">Senior Lecturer, SEUSL</div>
-              <div className="text-xs text-gray-600 font-['Space_Mono']">+94 77 7489 030</div>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-              <div className="font-medium text-white text-sm mb-1">Thafani Rasheed</div>
-              <div className="text-xs text-gray-500 mb-1">Senior Lecturer in Finance, SEUSL</div>
-              <div className="text-xs text-gray-600 font-['Space_Mono']">thafanirashed@seu.ac.lk</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
