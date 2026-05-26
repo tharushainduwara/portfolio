@@ -1,6 +1,21 @@
-import { Award, BookOpen, Users, Code2 } from 'lucide-react'
+import { Award, BookOpen, Users, Code2, Download, FileText, ArrowRight, CheckCircle } from 'lucide-react'
+import { useState } from 'react'
 
 const Resume = () => {
+  const [downloaded, setDownloaded] = useState(false)
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Tharusha_Iduwara_CV.pdf';
+    link.download = 'Tharusha_Iduwara_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setDownloaded(true)
+    setTimeout(() => setDownloaded(false), 3000)
+  }
+
   const certifications = [
     { name: "Flutter Mobile Application Development", issuer: "zero2lab Institute", url: "https://www.zero2lab.com/certificates/679f953283c05c220eeda2f1" },
     { name: "Computer Hardware Technician (NVQ Level 3)", issuer: "Department of Industries" },
@@ -38,7 +53,7 @@ const Resume = () => {
               <div className="section-label">Credentials</div>
             </div>
             <h2 className="section-title" style={{ marginBottom: 32 }}>Certifications</h2>
-            
+
             <div className="space-y-4">
               {certifications.map((cert, i) => (
                 <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-5 border-l-[3px] border-l-purple-400">
@@ -66,6 +81,30 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* CV Download Section - Left Column */}
+            <div className="mt-8 bg-gradient-to-r from-purple-500/15 to-pink-500/15 border border-purple-400/30 rounded-xl p-6 text-center">
+              <FileText className="w-10 h-10 text-purple-400 mx-auto mb-3" />
+              <h3 className="text-lg font-semibold text-white mb-2">Download My Resume</h3>
+              <p className="text-xs text-gray-400 mb-4">Complete CV with detailed experience, skills, and education</p>
+              <button
+                onClick={handleDownloadCV}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all group"
+              >
+                {downloaded ? (
+                  <>
+                    <CheckCircle className="w-4 h-4" />
+                    Downloaded!
+                  </>
+                ) : (
+                  <>
+                    <Download className="w-4 h-4" />
+                    Download CV (PDF)
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </>
+                )}
+              </button>
             </div>
           </div>
 
@@ -122,6 +161,35 @@ const Resume = () => {
             <div className="font-['Syne'] font-bold text-xl text-white mb-1">BSc in Management & Information Technology</div>
             <div className="text-sm text-gray-400">South Eastern University of Sri Lanka · Final Year Undergraduate</div>
           </div>
+        </div>
+
+        {/* Large Download Section at Bottom */}
+        <div className="mt-12 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border-2 border-purple-400/40 rounded-2xl p-10 text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4">
+            <Download className="w-8 h-8 text-white" />
+          </div>
+          <h3 className="text-2xl font-bold text-white mb-2">Ready to see my full profile?</h3>
+          <p className="text-gray-400 mb-6 max-w-md mx-auto">
+            Download my complete CV for a detailed look at my skills, experience, and achievements.
+          </p>
+          <button
+            onClick={handleDownloadCV}
+            className="inline-flex items-center gap-3 px-8 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-xl hover:shadow-purple-500/25 transition-all group text-lg"
+          >
+            {downloaded ? (
+              <>
+                <CheckCircle className="w-5 h-5" />
+                Downloaded Successfully!
+              </>
+            ) : (
+              <>
+                <Download className="w-5 h-5" />
+                Download CV (PDF)
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </>
+            )}
+          </button>
+          <p className="text-xs text-gray-500 mt-4">PDF format · 1 page · Updated 2026</p>
         </div>
       </div>
     </section>

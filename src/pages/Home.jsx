@@ -1,4 +1,14 @@
 const Home = () => {
+  const handleDownloadCV = () => {
+    // Create a link and trigger download
+    const link = document.createElement('a');
+    link.href = '/Tharusha_Iduwara_CV.pdf';  // Make sure your PDF is in the public folder
+    link.download = 'Tharusha_Iduwara_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="min-h-screen flex items-center relative overflow-hidden pt-20">
       {/* Grid Background */}
@@ -28,6 +38,15 @@ const Home = () => {
               <a href="#contact" className="bg-purple-500 text-black px-6 py-3 rounded-lg font-['Space_Mono'] text-sm font-bold hover:bg-purple-400 transition">
                 Get in touch →
               </a>
+              
+              {/* Download CV Button */}
+              <button 
+                onClick={handleDownloadCV}
+                className="border border-purple-500 text-purple-400 px-6 py-3 rounded-lg font-['Space_Mono'] text-sm font-bold hover:bg-purple-500/10 hover:border-purple-400 transition flex items-center gap-2"
+              >
+                📄 Download CV
+              </button>
+              
               <a href="https://github.com/tharushainduwara" target="_blank" rel="noreferrer" className="border border-white/15 text-gray-300 px-6 py-3 rounded-lg font-['Space_Mono'] text-sm hover:border-white/30 hover:bg-white/5 transition">
                 GitHub
               </a>
@@ -53,15 +72,19 @@ const Home = () => {
               <div className="absolute -inset-3 bg-gradient-to-r from-purple-500 via-pink-500 to-green-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-500 group-hover:duration-200" />
               
               {/* Main photo container */}
-                <div className="relative rounded-xl overflow-hidden">
-                  {/* Replace this path with your actual photo path */}
-                  <img 
-                    src="/profile.jpg"  /* ← CHANGE THIS TO YOUR PHOTO PATH */
-                    alt="Tharusha Iduwara"
-                    className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-xl"
-                    style={{ objectFit: 'cover' }}
-                  />       
-                </div>
+              <div className="relative rounded-xl overflow-hidden">
+                {/* Replace this path with your actual photo path */}
+                <img 
+                  src="/profile.jpg"  /* ← CHANGE THIS TO YOUR PHOTO PATH */
+                  alt="Tharusha Iduwara"
+                  className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-xl"
+                  style={{ objectFit: 'cover' }}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://ui-avatars.com/api/?name=Tharusha+Iduwara&background=8B5CF6&color=fff&size=400&rounded=true&bold=true";
+                  }}
+                />       
+              </div>
 
               {/* Status badge */}
               <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-1.5 shadow-lg">
