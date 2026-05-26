@@ -45,7 +45,7 @@ const Contact = () => {
 
           <div className="flex gap-6 justify-center mb-12">
             <a href="https://github.com/tharushainduwara" target="_blank" className="text-gray-500 hover:text-purple-400 transition text-sm font-['Space_Mono']">GitHub ↗</a>
-            <a href="https://linkedin.com/in/tharusha-iduwara" target="_blank" className="text-gray-500 hover:text-purple-400 transition text-sm font-['Space_Mono']">LinkedIn ↗</a>
+            <a href="https://www.linkedin.com/in/tharusha-iduwara-4aa46b3a4" target="_blank" className="text-gray-500 hover:text-purple-400 transition text-sm font-['Space_Mono']">LinkedIn ↗</a>
             <span className="text-gray-500 text-sm font-['Space_Mono']">Wadduwa, Sri Lanka</span>
           </div>
         </div>
