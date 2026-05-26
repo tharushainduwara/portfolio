@@ -46,12 +46,9 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right Content - Photo */}
+          {/* Right Content - Photo (No Gradient Ring) */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative group">
-              {/* Animated gradient ring around photo */}
-              <div className="absolute -inset-3 bg-gradient-to-r from-purple-500 via-pink-500 to-green-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-500 group-hover:duration-200" />
-              
               {/* Main photo container */}
               <div className="relative bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-2 backdrop-blur-sm">
                 <div className="relative rounded-xl overflow-hidden">
@@ -61,6 +58,10 @@ const Home = () => {
                     alt="Tharusha Iduwara"
                     className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-xl"
                     style={{ objectFit: 'cover' }}
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "https://ui-avatars.com/api/?name=Tharusha+Iduwara&background=8B5CF6&color=fff&size=400&rounded=true&bold=true";
+                    }}
                   />
                   
                   {/* Overlay gradient for depth */}
