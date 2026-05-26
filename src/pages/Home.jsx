@@ -31,7 +31,7 @@ const Home = () => {
               <a href="https://github.com/tharushainduwara" target="_blank" rel="noreferrer" className="border border-white/15 text-gray-300 px-6 py-3 rounded-lg font-['Space_Mono'] text-sm hover:border-white/30 hover:bg-white/5 transition">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/tharusha-iduwara" target="_blank" rel="noreferrer" className="border border-white/15 text-gray-300 px-6 py-3 rounded-lg font-['Space_Mono'] text-sm hover:border-white/30 hover:bg-white/5 transition">
+              <a href="https://www.linkedin.com/in/tharusha-iduwara-4aa46b3a4" target="_blank" rel="noreferrer" className="border border-white/15 text-gray-300 px-6 py-3 rounded-lg font-['Space_Mono'] text-sm hover:border-white/30 hover:bg-white/5 transition">
                 LinkedIn
               </a>
             </div>
