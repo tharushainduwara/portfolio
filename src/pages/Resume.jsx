@@ -9,7 +9,7 @@ const Resume = () => {
 
   const experiences = [
     {
-      role: "Head of Social Media & Editor",
+      role: "Head of Social Media Managing & Editor",
       org: "Heart of Agni Media Unit — SEUSL",
       period: "2026 – Present",
       desc: "Leading social media strategy, content planning, and digital media creation for faculty events.",
@@ -23,7 +23,7 @@ const Resume = () => {
   ]
 
   const languages = [
-    { name: "English", level: "Intermediate" },
+    { name: "English", level: "Fluent" },
     { name: "Sinhala", level: "Native" }
   ]
 
