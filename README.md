@@ -3,7 +3,7 @@
 
 > Personal portfolio website built with React, Vite, and Tailwind CSS.
 
-**Live at:** `[your-portfolio-url.com](https://portfolio-tawny-psi-48.vercel.app/)` · [GitHub](https://github.com/tharushainduwara) · [LinkedIn](https://linkedin.com/in/tharusha-iduwara)
+**Live at:** `https://portfolio-tawny-psi-48.vercel.app/` · [GitHub](https://github.com/tharushainduwara) · [LinkedIn](https://linkedin.com/in/tharusha-iduwara)
 
 ---
 
