@@ -53,7 +53,6 @@ const Home = () => {
               <div className="absolute -inset-3 bg-gradient-to-r from-purple-500 via-pink-500 to-green-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-500 group-hover:duration-200" />
               
               {/* Main photo container */}
-              <div className="relative bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-2 backdrop-blur-sm">
                 <div className="relative rounded-xl overflow-hidden">
                   {/* Replace this path with your actual photo path */}
                   <img 
@@ -63,8 +62,7 @@ const Home = () => {
                     style={{ objectFit: 'cover' }}
                   />       
                 </div>
-              </div>
-              
+
               {/* Status badge */}
               <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-1.5 shadow-lg">
                 <div className="bg-black/80 rounded-full px-3 py-1">
