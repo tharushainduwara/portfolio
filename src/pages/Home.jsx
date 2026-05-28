@@ -2,8 +2,8 @@ const Home = () => {
   const handleDownloadCV = () => {
     // Create a link and trigger download
     const link = document.createElement('a');
-    link.href = '/K.D.T Iduwara.pdf';  // Make sure your PDF is in the public folder
-    link.download = 'K.D.T Iduwara.pdf';
+    link.href = '/Tharusha Iduwara CV.pdf';  // Make sure your PDF is in the public folder
+    link.download = 'Tharusha Iduwara CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

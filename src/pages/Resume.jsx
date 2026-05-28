@@ -6,8 +6,8 @@ const Resume = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/K.D.T Iduwara.pdf';
-    link.download = 'K.D.T Iduwara.pdf';
+    link.href = '/Tharusha Iduwara CV.pdf';
+    link.download = 'Tharusha Iduwara CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
