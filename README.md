@@ -1,9 +1,14 @@
 
 # K.D. Tharusha Iduwara — Portfolio
-
 > Personal portfolio website built with React, Vite, and Tailwind CSS.
 
 **Live at:** [Portfolio](https://portfolio-tawny-psi-48.vercel.app) · [GitHub](https://github.com/tharushainduwara) · [LinkedIn](https://linkedin.com/in/tharusha-iduwara)
+
+---
+
+## Screenshot
+
+![Home Page](Home_Preview.png)
 
 ---
 
